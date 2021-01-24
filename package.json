@@ -33,8 +33,11 @@
     "webpack-manifest-plugin": "^2.1.0"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
+    "add": "^2.0.6",
     "autoprefixer": "^10.2.3",
     "postcss-import": "^14.0.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "yarn": "^1.22.10"
   }
 }
