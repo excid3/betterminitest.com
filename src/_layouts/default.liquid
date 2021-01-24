@@ -5,9 +5,9 @@
   </head>
   <body class="{{ page.layout }} {{ page.page_class }}">
     <main class="h-screen flex">
-      {% render "navbar", metadata: site.metadata, page: page %}
+      {% render "navbar", metadata: site.metadata, page: page, posts: site.posts %}
 
-      <div class="p-4">
+      <div class="p-4 prose">
         {{ content }}
       </div>
     </main>
