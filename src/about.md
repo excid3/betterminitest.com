@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the basic Bridgetown site template. You can find out more info about customizing your Bridgetown site, as well as basic Bridgetown usage documentation at [bridgetownrb.com](https://bridgetownrb.com/)
+This is a colleciton of examples and best practices for using Minitest to test Ruby and Rails applications. It's community organized and run.
 
-You can find the source code for Bridgetown at GitHub:
-[bridgetownrb](https://github.com/bridgetownrb) /
-[bridgetown](https://github.com/bridgetownrb/bridgetown)
+You can find the source code for [BetterMinitest.com on GitHub](https://github.com/excid3/betterminitest.com)

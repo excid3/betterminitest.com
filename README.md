@@ -1,4 +1,4 @@
-# BetterMinitest.com
+# [BetterMinitest.com](https://betterminitest.com)
 
 Learn how to write tests with Minitest.
 
