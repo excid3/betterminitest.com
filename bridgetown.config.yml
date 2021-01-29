@@ -1,23 +1,18 @@
-# Welcome to Bridgetown!
-#
-# This config file is for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that.
+# Bridgetown Configuration
+# https://www.bridgetownrb.com/docs/configuration/options
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec bridgetown serve'. If you change this file, please restart the
 # server process.
 #
-# For reloadable site metadata like title, SEO description, social media
-# handles, etc., take a look at src/_data/site_metadata.yml
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
+# This file should only be used for configuring Bridgetown and Bridgetown plugins,
+# custom site data (SEO information, saved JSON responses, etc.) goes in `src/_data/`
+# https://www.bridgetownrb.com/docs/datafiles
 
-baseurl: "" # OPTIONAL: the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+template_engine: erb
+url: "https://betterminitest.com"
+permalink: simple
+timezone: America/Chicago
 
-permalink: pretty
-
-# timezone: America/Los_Angeles
+development:
+  unpublished: true

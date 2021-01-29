@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "bundle exec bridgetown build",
-    "serve": "bundle exec bridgetown serve",
-    "clean": "bundle exec bridgetown clean",
+    "build": "bin/bridgetown build",
+    "serve": "bin/bridgetown serve",
+    "clean": "bin/bridgetown clean",
     "webpack-build": "webpack --mode production",
     "webpack-dev": "webpack --mode development -w",
     "deploy": "yarn clean && yarn webpack-build && yarn build",
