@@ -14,7 +14,7 @@ destination: .bridgetown
 # The template engine Bridgetown will use by default
 template_engine: erb
 # The base hostname & protocol for the site
-url: "https://betterminitest.com"
+url: ""
 # The default permalink structure
 permalink: simple
 # The time zone used by Bridgetown during site generation
