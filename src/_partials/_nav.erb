@@ -1,0 +1,12 @@
+<div class="flex flex-col flex-shrink-0 w-64">
+  <div class="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto border-r border-gray-200">
+    <a class="block px-4 text-2xl font-bold" href="/">Better Minitest</a>
+    <nav class="px-4 mt-2">
+      <h2 class="block">Examples</h2>
+        <% site.posts.docs.each do |post|  %>
+          <a class="block m-2" href="<%= post.url %>"><%= post.title %></a>
+        <% end %>
+      <a class="block" href="/about">About</a>
+    </nav>
+  </div>
+</div>

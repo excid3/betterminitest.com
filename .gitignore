@@ -1,5 +1,6 @@
 # Bridgetown
-output
+build
+.bridgetown
 .bridgetown-cache
 .bridgetown-metadata
 .bridgetown-webpack
@@ -8,6 +9,7 @@ output
 node_modules
 bower_components
 vendor
+web_modules
 
 # Caches
 .sass-cache

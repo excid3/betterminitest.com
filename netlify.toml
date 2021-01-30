@@ -1,0 +1,25 @@
+[build]
+  command = "yarn build"
+  publish = "build"
+
+[context.production]
+  environment = { NODE_VERSION = "14.15.3", RUBY_VERSION = "3.0.0" }
+
+[context.deploy-preview]
+  environment = { NODE_VERSION = "14.15.3", RUBY_VERSION = "3.0.0" }
+  command = "printf \"url: %s\" \"$DEPLOY_PRIME_URL\" > bridgetown.config.yml; yarn build"
+
+[dev]
+  command = "yarn start"
+  publish = "build"
+  port = 3000
+  targetPort = 8080
+  framework = "#custom"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self' https://rsms.me https://api.netlify.com; style-src 'self' https://rsms.me 'unsafe-inline'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; worker-src 'self' blob:;"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"

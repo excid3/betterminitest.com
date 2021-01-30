@@ -1,7 +1,5 @@
 ---
-layout: page
 title: About
-permalink: /about/
 ---
 
 This is a colleciton of examples and best practices for using Minitest to test Ruby and Rails applications. It's community organized and run.

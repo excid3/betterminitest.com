@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    <%= page&.data[:title] || site.metadata.title %>
+  </title>
+  <base href="<%= site.data.url %>">
+  <meta name="description" content="<%= site.metadata.description %>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= absolute_url '/apple-touch-icon.png' %>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= absolute_url '/favicon-32x32.png' %>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= absolute_url '/favicon-16x16.png' %>">
+  <link rel="manifest" href="<%= absolute_url '/site.webmanifest' %>">
+  <link rel="preconnect" href="https://rsms.me" crossorigin />
+  <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" />
+  <link crossorigin="anonymous" rel="stylesheet" href="https://rsms.me/inter/inter.css" media="print" onload="this.media='all'; this.onload=null;" />
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="<%= absolute_url 'dist/styles/index.css' %>">
+    <link rel="stylesheet" type="text/css" href="<%= absolute_url 'dist/styles/syntax.css' %>">
+  </noscript>
+</head>
