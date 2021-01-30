@@ -9,10 +9,25 @@
 # custom site data (SEO information, saved JSON responses, etc.) goes in `src/_data/`
 # https://www.bridgetownrb.com/docs/datafiles
 
+# The directory where Bridgetown will write files
+destination: .bridgetown
+# The template engine Bridgetown will use by default
 template_engine: erb
+# The base hostname & protocol for the site
 url: "https://betterminitest.com"
+# The default permalink structure
 permalink: simple
+# The time zone used by Bridgetown during site generation
 timezone: America/Chicago
+# Exclude directories and/or files from the conversion.
+exclude:
+  - "_static/"
 
+# Development environment specific config options
+# i.e. when BRIDGETOWN_ENV="production"
+# https://www.bridgetownrb.com/docs/configuration/environments
 development:
+  # Build unpublished documents in development
   unpublished: true
+  # Needed for absolute urls in development.
+  url: "http://localhost:8080"

@@ -1,7 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-
-layout: home
+layout: page
+title: What is Better Minitest
 ---
 
-Welcome to Bridgetown!
+Better Minitest is a collection of examples and best practices for using Minitest.

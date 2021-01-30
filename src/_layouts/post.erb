@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<section class="w-full mx-auto">
+  <header>
+    <h1 class="text-4xl font-bold lg:text-5xl font-heading">
+      <%= page.data.title %>
+    </h1>
+  </header>
+  <article class="my-8 prose lg:my-16 md:prose-lg lg:prose-xl prose-blue">
+    <%= yield %>
+  </article>
+</section>

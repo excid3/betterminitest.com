@@ -1,2 +1,7 @@
+# Default layout for all documents in the `src/_posts` folder
 layout: post
+# Default categories for all documents in the `src/_posts` folder.
+# Note that these are essentially prefixes for the document title
+# so changing it would change all your URL's unless you hardcode the
+# permalink into all affected documents.
 categories: [examples]

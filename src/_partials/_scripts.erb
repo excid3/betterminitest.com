@@ -1,0 +1,15 @@
+<script>
+  (function() {
+      var cssMain = document.createElement('link');
+      cssMain.href = '<%= absolute_url "dist/styles/index.css" %>';
+      cssMain.rel = 'stylesheet';
+      cssMain.type = 'text/css';
+      document.getElementsByTagName('head')[0].appendChild(cssMain);
+      var cssFa = document.createElement('link');
+      cssFa.href = '<%= absolute_url "dist/styles/syntax.css" %>';
+      cssFa.rel = 'stylesheet';
+      cssFa.type = 'text/css';
+      document.getElementsByTagName('head')[0].appendChild(cssFa);
+  })();
+</script>
+<script type="module" src="<%= absolute_url 'dist/javascript/index.js' %>"></script>

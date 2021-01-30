@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <%= render "head" %>
+  <body class="flex flex-col min-h-screen antialiased">
+    <div class="flex flex-1">
+      <%= render "nav" %>
+      <main class="p-4">
+        <%= yield %>
+      </main>
+    </div>
+    <%= render "footer" %>
+    <%= render "scripts" %>
+  </body>
+</html>

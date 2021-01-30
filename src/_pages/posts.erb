@@ -1,0 +1,11 @@
+---
+title: Posts
+---
+
+<ul>
+  <% site.posts.docs.each do |post| %>
+    <li>
+      <a href="<%= post.url %>"><%= post.title %></a>
+    </li>
+  <% end %>
+</ul>
