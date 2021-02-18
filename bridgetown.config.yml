@@ -10,7 +10,7 @@
 # https://www.bridgetownrb.com/docs/datafiles
 
 # The directory where Bridgetown will write files
-destination: .bridgetown
+destination: _bridgetown
 # The template engine Bridgetown will use by default
 template_engine: erb
 # The base hostname & protocol for the site
