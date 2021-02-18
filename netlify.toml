@@ -7,7 +7,7 @@
 
 [context.deploy-preview]
   environment = { NODE_VERSION = "14.15.3", RUBY_VERSION = "3.0.0" }
-  command = "printf \"url: %s\" \"$DEPLOY_PRIME_URL\" > bridgetown.config.yml; yarn build"
+  command = "yarn build"
 
 [dev]
   command = "yarn start"
