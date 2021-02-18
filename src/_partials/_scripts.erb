@@ -1,10 +1,5 @@
 <script>
   (function() {
-      var cssMain = document.createElement('link');
-      cssMain.href = '<%= absolute_url "dist/styles/index.css" %>';
-      cssMain.rel = 'stylesheet';
-      cssMain.type = 'text/css';
-      document.getElementsByTagName('head')[0].appendChild(cssMain);
       var cssFa = document.createElement('link');
       cssFa.href = '<%= absolute_url "dist/styles/syntax.css" %>';
       cssFa.rel = 'stylesheet';
@@ -13,3 +8,30 @@
   })();
 </script>
 <script type="module" src="<%= absolute_url 'dist/javascript/index.js' %>"></script>
+<script>
+  let sideBar = document.getElementById("mobile-nav");
+  let menu = document.getElementById("menu");
+  let cross = document.getElementById("cross");
+  const sidebarHandler = (check) => {
+    if (check) {
+      sideBar.style.transform = "translateX(0px)";
+      menu.classList.add("hidden");
+      cross.classList.remove("hidden");
+    } else {
+      sideBar.style.transform = "translateX(-100%)";
+      menu.classList.remove("hidden");
+      cross.classList.add("hidden");
+    }
+  };
+  function dropdownHandler(element) {
+    let single = element.getElementsByTagName("ul")[0];
+    single.classList.toggle("hidden");
+  }
+
+   document.querySelectorAll(".prose h1, .prose h2, .prose h3, .prose h4").forEach((headerEl) => {
+    const linkEl = document.createElement("a")
+    linkEl.setAttribute("href", "#" + headerEl.id)
+    linkEl.innerText = " #"
+    headerEl.appendChild(linkEl)
+  })
+</script>

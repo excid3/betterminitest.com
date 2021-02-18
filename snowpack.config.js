@@ -4,12 +4,13 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
+    _bridgetown: { url: "/", static: true },
     frontend: "/dist",
     "src/_static": { url: "/", static: true, resolve: false },
-    ".bridgetown": { url: "/", static: true },
   },
   plugins: [
     "@snowpack/plugin-dotenv",
+    "@snowpack/plugin-postcss",
     [
       "@snowpack/plugin-run-script",
       {
@@ -18,23 +19,36 @@ module.exports = {
         watch: "$1 --watch --quiet",
       },
     ],
-    "@snowpack/plugin-postcss",
+    [
+      "snowpack-plugin-minify-html",
+      {
+        htmlMinifierOptions: {
+          // https://github.com/kangax/html-minifier#readme
+          collapseWhitespace: true,
+          removeComments: true,
+          removeEmptyAttributes: true,
+          sortAttributes: true,
+        },
+      },
+    ],
   ],
-  devOptions: {
-    hmrDelay: 1000,
-    open: "none",
+  packageOptions: {
+    NODE_ENV: true,
+    source: "remote",
   },
   buildOptions: {
-    metaUrlPath: "dist/javascript",
+    clean: true,
+    out: "build",
+  },
+  devOptions: {
+    open: "none",
+    hmrDelay: 1100,
   },
   optimize: {
-    entrypoints: ["dist/javascript/index.js"],
     preload: false,
     bundle: false,
-    splitting: false,
-    treeshake: true,
-    minify: true,
     manifest: true,
+    minify: true,
     target: "es2018",
   },
 }

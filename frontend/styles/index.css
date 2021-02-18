@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  html {
+    @apply text-base bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  }
+
+  h6 {
+    @apply text-base font-bold;
+  }
+
+  h5 {
+    @apply text-lg font-bold;
+  }
+
+  h4 {
+    @apply text-xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-extrabold;
+  }
+
+  h1 {
+    @apply text-4xl font-extrabold;
+  }
+
+  .stack {
+    @apply flex flex-col divide-y divide-gray-200 dark:divide-gray-700 space-y-2;
+  }
+}
+
+@layer utilities {
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6,
+  .prose p,
+  .prose a,
+  .prose strong {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+
+  .prose blockquote {
+    @apply py-0.5 border-l-2 border-gray-500 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-100 not-italic;
+  }
+
+  .prose a {
+    @apply font-bold;
+  }
+
+  .prose pre {
+    @apply text-gray-200 px-1 py-0.5 border border-gray-700 rounded-md bg-gray-900;
+  }
+
+  .prose p {
+    @apply break-words;
+
+    word-break: break-word;
+  }
+
+  .prose p + p {
+    margin-top: 0;
+  }
+
+  .prose code {
+    @apply text-gray-200 px-2 py-1 border border-gray-700 rounded-md bg-gray-900 font-normal;
+  }
+
+  .prose code::before {
+    content: "";
+  }
+
+  .prose code::after {
+    content: "";
+  }
+
+  .prose hr {
+    @apply border-gray-300 dark:border-gray-700 my-4;
+  }
+}

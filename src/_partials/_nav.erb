@@ -1,12 +1,22 @@
-<div class="flex flex-col flex-shrink-0 w-64">
-  <div class="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto border-r border-gray-200">
-    <a class="block px-4 text-2xl font-bold" href="/">Better Minitest</a>
-    <nav class="px-4 mt-2">
-      <h2 class="block">Examples</h2>
-        <% site.posts.docs.each do |post|  %>
-          <a class="block m-2" href="<%= post.url %>"><%= post.title %></a>
-        <% end %>
-      <a class="block" href="/about">About</a>
-    </nav>
+<nav class="relative z-10 flex items-center justify-end h-16 shadow lg:items-stretch lg:justify-between">
+    <div class="relative visible mr-8 lg:hidden" onclick="sidebarHandler(true)" id="menu">
+    <svg
+      aria-label="Main Menu"
+      aria-haspopup="true"
+      xmlns="http://www.w3.org/2000/svg"
+      class="cursor-pointer icon icon-tabler icon-tabler-menu"
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="8" x2="20" y2="8" />
+      <line x1="4" y1="16" x2="20" y2="16" />
+    </svg>
   </div>
-</div>
+</nav>

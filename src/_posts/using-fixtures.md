@@ -1,12 +1,18 @@
 ---
 title: Using Fixtures
-created_at: 2021-01-29T21:44:30.248Z
+date: 2021-02-18T04:47:53.442Z
 ---
 
 basic intro
 
-## Getting Started
+**BAD**
 
-## Examples
+```ruby
+assert_redirected_to parent_child_path(parent, child)
+```
 
-## Tricks and Tips
+**Good**
+
+```ruby
+assert_redirected_to parent_child_path(parent, child)
+```
