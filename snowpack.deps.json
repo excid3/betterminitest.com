@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "stimulus": "^2.0.0"
-  },
-  "lock": {
-    "stimulus#^2.0.0": "stimulus@v2.0.0-rUjblCyZFBBTf2SNn4wP"
-  }
-}

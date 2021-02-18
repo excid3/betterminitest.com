@@ -1,0 +1,9 @@
+ <div class="px-8 mt-20">
+  <% site.posts.docs.each do |post| %>
+    <a
+      href="#<%= post.slug %>"
+      class="flex items-center justify-between w-full mb-6 text-gray-300 cursor-pointer hover:text-gray-500">
+      <%= post.title %>
+    </a>
+  <% end %>
+</div>

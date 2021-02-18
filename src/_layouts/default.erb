@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
   <%= render "head" %>
-  <body class="flex flex-col min-h-screen antialiased">
-    <div class="flex flex-1">
-      <%= render "nav" %>
-      <main class="p-4">
+  <body class="flex h-full min-h-screen antialiased">
+    <%= render 'sidebar' %>
+    <%= render 'mobile_nav' %>
+    <wrapper class="block w-full h-full">
+      <%= render 'nav' %>
+      <main class="container w-11/12 px-6 py-10 mx-auto md:w-4/5">
         <%= yield %>
       </main>
-    </div>
-    <%= render "footer" %>
+    </wrapper>
     <%= render "scripts" %>
   </body>
 </html>

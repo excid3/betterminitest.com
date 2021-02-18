@@ -1,0 +1,36 @@
+<div class="absolute z-40 w-full h-full transform -translate-x-full lg:hidden" id="mobile-nav">
+  <div class="absolute w-full h-full bg-gray-800 opacity-60" onclick="sidebarHandler(false)"></div>
+  <div class="absolute z-20 flex-col justify-between w-64 h-full transition duration-150 ease-in-out bg-gray-800 shadow md:w-96 pb4">
+    <div class="flex flex-col justify-between w-full h-full">
+      <div>
+        <div class="flex items-center justify-between px-8 text-white">
+          <div class="flex items-center w-full h-16">
+            💎
+          </div>
+          <div onclick="sidebarHandler(false)">
+            <svg
+              id="cross"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-x"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </div>
+        </div>
+        <div class="px-8">
+          <%= render 'nav_links' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -11,9 +11,6 @@
     "restart": "npm-run-all clean build:bridgetown start",
     "start": "snowpack dev"
   },
-  "dependencies": {
-    "stimulus": "^2.0.0"
-  },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-postcss": "^1.1.0",
