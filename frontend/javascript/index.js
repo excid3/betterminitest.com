@@ -1,1 +1,1 @@
-console.info("Bridgetown is loaded!")
+import * as Turbo from "@hotwired/turbo"

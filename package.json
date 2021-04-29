@@ -11,7 +11,9 @@
     "restart": "npm-run-all clean build:bridgetown start",
     "start": "snowpack dev"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@hotwired/turbo": "^7.0.0-beta.5"
+  },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-postcss": "^1.1.0",
